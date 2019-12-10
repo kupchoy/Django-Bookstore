@@ -43,6 +43,7 @@ COPY . /code/
 #RUN pip install -r requirements.txt
 RUN pip install Django
 RUN pip install psycopg2
+RUN pip install django-crispy-forms
 
 RUN apk add --no-cache \
     curl \
