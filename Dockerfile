@@ -44,6 +44,7 @@ COPY . /code/
 RUN pip install Django
 RUN pip install psycopg2
 RUN pip install django-crispy-forms
+RUN pip install django-debug-toolbar
 RUN pip install django-allauth
 RUN pip install pillow
 RUN pip install stripe
