@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+{% extends '_base.html' %}
+{% load static %}
+
+{% block title %}Home{% endblock title %}
+
+{% block content %}
+    <!-- this is a comment -->
+    <header class="bg-primary py-1 mb-5">
+        <div class="container h-50">
+            <div class="row h-50 align-items-center">
+                <div class="col-lg-12">
+                    <h1 class="display-4 text-white mt-5 mb-2">Django Bookstore</h1>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="container">
+        <div class="row">
+            <h3>Meet Django</h3>
+        </div>
+
+        <div class="row">
+            <p>
+                Django is a high-level Python Web framework that encourages rapid development and clean, pragmatic
+                design. Built by experienced developers, it takes care of much of the hassle of Web development, so you
+                can focus on writing your app without needing to reinvent the wheel. It’s free and open source.
+            </p>
+        </div>
+
+        <div class="row">
+            <h3>Learn Django</h3>
+        </div>
+
+        <div class="row">
+            <p>
+                This is your place for the largest and latest set of books about Django
+            </p>
+        </div>
+            <br/>
+        <div class="row">
+            <h3>What's new</h3>
+        </div>
+
+        <div class="row">
+            {% for book in three_latest %}
+                <div class="media">
+                    <img class="mr-3 mt-3" src="{{ book.cover.url }}" alt="{{ book.title }}"
+                         width="auto" height="100">
+                    <div class="media-body">
+                        <h5><a href="{{ book.get_absolute_url }}">{{ book.title }}</a></h5>
+                        {{ book.description }}
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+
+    </div>
+
+{% endblock content %}
