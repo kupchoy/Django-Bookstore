@@ -5,12 +5,20 @@
 {% block content %}
     <p></p>
     {% if not perms.book.special_status %}
-    <a href="{% url 'orders' %}" class="btn-success">Purchase All Books</a>
+        <a href="{% url 'orders' %}" class="btn-success">Purchase All Books</a>
     {% endif %}
     <p></p>
     {% for book in book_list %}
-        <div>
-            <h2><a href="{{ book.get_absolute_url }}">{{ book.title }}</a> </h2>
+        <div class="card mt-3 mb-3">
+        <div class="media">
+            <img class="mr-3 mt-3" src="{{ book.cover.url }}" alt="{{ book.title }}"
+                 width="auto" height="100">
+            <div class="media-body">
+                <h5><a href="{{ book.get_absolute_url }}">{{ book.title }}</a></h5>
+                {{ book.description }}
+
+            </div>
+        </div>
         </div>
     {% endfor %}
 {% endblock content %}
