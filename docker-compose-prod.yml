@@ -13,6 +13,7 @@ services:
       - DEBUG=0
       - STRIPE_TEST_PUBLISHABLE_KEY=pk_test_utDn0dhH2rq0JI7g1AnIQ50X00MvVnMlQN
       - STRIPE_TEST_SECRET_KEY=sk_test_0jEBLGu1gStnW5frFcfcqFJY00Qj336dez
+      - POSTGRES_PASSWORD=postgres
     volumes:
       - .:/code
     ports:
@@ -22,6 +23,7 @@ services:
 
   db:
     image: postgres
-
+    environment:
+      - POSTGRES_PASSWORD=postgres
 
 
