@@ -1,8 +1,9 @@
 # Base Image
 #FROM python:3.5-alpine
 # Base Image
-FROM arm32v6/python:3.8-alpine
-
+#FROM arm32v6/python:3.8-alpine
+###### Note use above line for rasp pi
+FROM python:3.8-alpine
 # Set execution environment
 #COPY requirements /requirements
 
