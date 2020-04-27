@@ -1,0 +1,11 @@
+<form method='POST' action='{% url 'purchase' %}' class="form"> {% csrf_token %}
+    <input type='hidden' name='total' value='{{ total }}' />
+{#      <button type='submit' class='btn btn-lg btn-success'>Checkout</button>#}
+    <script src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+                data-key="{{ stripe_key }}"
+                data-description ="All Books"
+                data-amount=total
+                data-local="auto">
+        </script>
+
+    </form>

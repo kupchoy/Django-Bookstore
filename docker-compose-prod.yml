@@ -5,7 +5,8 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
-    command: "python manage.py runserver 0.0.0.0:9000"
+#    command: "python manage.py runserver 0.0.0.0:9000"
+    command: gunicorn bookstore_project.wsgi -b 0.0.0.0:9000
     environment:
       - ENVIRONMENT=production
       - SECRET_KEY=$_f#u(g2!@b68bhqxb@$v=^y2xfc-b)o7_%e)8t#_1_nd9kgty

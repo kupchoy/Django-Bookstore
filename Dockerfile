@@ -40,14 +40,15 @@ COPY . /code/
 
 #RUN python manage.py collectstatic --noinput
 #CMD gunicorn config.wsgi
-#RUN pip install -r requirements.txt
-RUN pip install Django
-RUN pip install psycopg2
-RUN pip install django-crispy-forms
-RUN pip install django-debug-toolbar
-RUN pip install django-allauth
-RUN pip install pillow
-RUN pip install stripe
+RUN pip install -r requirements.txt
+#RUN pip install Django
+#RUN pip install psycopg2
+#RUN pip install django-crispy-forms
+#RUN pip install django-debug-toolbar
+#RUN pip install django-allauth
+#RUN pip install pillow
+#RUN pip install stripe
+#RUN pip install djangorestframework
 
 RUN apk add --no-cache \
     curl \

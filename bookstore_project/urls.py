@@ -17,6 +17,9 @@ from django.conf import settings
 from django.conf.urls.static import static
 from django.contrib import admin
 from django.urls import path, include
+from django.conf.urls import url
+
+from carts.views import cart_home
 
 urlpatterns = [
     path('anything-but-admin/', admin.site.urls),
@@ -26,6 +29,9 @@ urlpatterns = [
     path('', include('pages.urls')),
     path('books/', include('books.urls')),
     path('orders/', include('orders.urls')),
+    path('cart/', include('carts.urls')),
+    path('api/', include('api.urls')),
+    # url(r'^cart/$', cart_home, name='cart')
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 
 if settings.DEBUG:
