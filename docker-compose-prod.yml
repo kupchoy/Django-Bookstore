@@ -1,11 +1,9 @@
-version: "3.3"
+version: "3.7"
 
 services:
   web:
-    build:
-      context: .
-      dockerfile: Dockerfile
-#    command: "python manage.py runserver 0.0.0.0:9000"
+    build: .
+    #    command: "python manage.py runserver 0.0.0.0:9000"
     command: gunicorn bookstore_project.wsgi -b 0.0.0.0:9000
     environment:
       - ENVIRONMENT=production
@@ -14,10 +12,8 @@ services:
       - STRIPE_TEST_PUBLISHABLE_KEY=pk_test_utDn0dhH2rq0JI7g1AnIQ50X00MvVnMlQN
       - STRIPE_TEST_SECRET_KEY=sk_test_0jEBLGu1gStnW5frFcfcqFJY00Qj336dez
       - POSTGRES_PASSWORD=postgres
-    volumes:
-      - .:/code
     ports:
-      - "9000:9000"
+      - 9000:9000
     depends_on:
       - db
 
@@ -25,10 +21,3 @@ services:
     image: postgres
     environment:
       - POSTGRES_PASSWORD=postgres
-    volumes:
-      - postgres_data:/var/lib/postgresql/data/
-
-  volumes:
-    postgres_data:
-
-

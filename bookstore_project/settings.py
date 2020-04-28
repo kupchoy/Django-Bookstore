@@ -29,7 +29,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = int(os.environ.get('DEBUG', default=0))
 
-ALLOWED_HOSTS = ['https://glacial-fortress-08753.herokuapp.com/',
+ALLOWED_HOSTS = ['pure-mountain-29084.herokuapp.com',
                  '192.168.1.99']
 
 
