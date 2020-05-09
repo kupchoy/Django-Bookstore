@@ -1,0 +1,24 @@
+http://192.168.1.99:9000/api/rest-auth/login/
+
+just login using email and password
+
+in postman POST the above url with email and password in Body
+
+sends back token
+
+{
+    "key": "b48f7159adeebaa24e9b34e468847273b135ac0f"
+}
+
+create a user
+POST
+http://192.168.1.99:9000/api/users/
+
+Response body: {"id":10,"email":"flutter4@booty.com","username":"flutter4"}
+Response body: {"username":["A user with that username already exists."]}
+
+{
+    "email": "",
+    "username": "",
+    "password": ""
+}

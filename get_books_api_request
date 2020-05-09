@@ -1,0 +1,86 @@
+GET from postman
+
+http://192.168.1.99:9000/api/books/
+
+[
+    {
+        "id": "b9306026-d336-4199-85f8-126847f882e2",
+        "title": "Practical Django 2 and Channels 2",
+        "author": "Federico Marani",
+        "price": "29.99",
+        "description": "Learn how to rapidly build your own ecommerce site by applying Django’s battle-tested components. This book demonstrates Django’s features and conventions to help you develop modern web applications quickly. You'll adopt a \"learn by doing\" approach and gain a deeper understanding Django by working through a project in which the real-time component will be critical.",
+        "cover": "http://192.168.1.99:9000/media/covers/Pratical_django_and_channels_Marani.jpg"
+    },
+    {
+        "id": "8e8a047e-81f5-49e0-9e59-78342ee36377",
+        "title": "Python Django Web Development",
+        "author": "William Jordon",
+        "price": "15.49",
+        "description": "The need for web apps has been on the rise. However, most languages that support web development do not provide an easy means by which to implement the modern need for web apps. This means that developers spend longer periods of time developing these apps. Django is a Python framework that provides web developers with a mechanism to develop web apps in a quick and easy manner.",
+        "cover": "http://192.168.1.99:9000/media/covers/python_django_web_dev_jordon.jpg"
+    },
+    {
+        "id": "6abe37a4-769e-4526-8c17-a435bb7c905a",
+        "title": "Django Unleashed",
+        "author": "Andrew Pinkham",
+        "price": "31.19",
+        "description": "Django Unleashed is your step-by-step, beginner-friendly guide to leveraging Django’s core capabilities and its powerful contributed library. You’ll learn in the most effective way possible: hands on, by building a fully functional Django website from scratch. You’ll even deploy the website to the cloud.",
+        "cover": "http://192.168.1.99:9000/media/covers/django_unleashed_pinkham.jpg"
+    },
+    {
+        "id": "4be251f5-4b55-4ec4-a128-fe2a5746de5a",
+        "title": "Django Design Patterns and Best Practices",
+        "author": "Arun Ravindran",
+        "price": "44.99",
+        "description": "Build maintainable websites with elegant Django design patterns and modern best practices",
+        "cover": "http://192.168.1.99:9000/media/covers/django_best_practices_ravindran.jpg"
+    },
+    {
+        "id": "4826823b-fbdf-4309-aff8-494d355f7fd9",
+        "title": "Django 2 Web Development Cookbook",
+        "author": "Aidas Bendoraitis",
+        "price": "22.39",
+        "description": "Create unbelievably fast, robust and secure web apps with Django web framework and Python 3.6",
+        "cover": "http://192.168.1.99:9000/media/covers/django_2_web_dev_Bendoratis.jpg"
+    },
+    {
+        "id": "217a4559-9f02-4cd0-8caf-d1c693873cd2",
+        "title": "Django 2 by Example",
+        "author": "Antonio Mele",
+        "price": "31.19",
+        "description": "Learn Django 2.0 with four end-to-end projects",
+        "cover": "http://192.168.1.99:9000/media/covers/django_2_by_example_mele.jpg"
+    },
+    {
+        "id": "82b63643-6db6-47c7-a8a9-82f8c6f17d0e",
+        "title": "Django for APIs",
+        "author": "William S. Vincent",
+        "price": "39.00",
+        "description": "Learn how to build web APIs with Python and Django 2.2",
+        "cover": "http://192.168.1.99:9000/media/covers/django_for_apis.jpg"
+    },
+    {
+        "id": "8a4766f7-6f96-40d8-9254-fc4054fa9c40",
+        "title": "Django for Professionals",
+        "author": "William S. Vincent",
+        "price": "39.00",
+        "description": "Learn how to build production-ready websites with Python & Django",
+        "cover": "http://192.168.1.99:9000/media/covers/djangoforprofessionals.jpg"
+    },
+    {
+        "id": "703d58b8-9b7e-45c6-873d-7cc0a3692d28",
+        "title": "Django for Beginners",
+        "author": "William S. Vincent",
+        "price": "38.11",
+        "description": "A step-by-step guide to building web applications with Python and Django 3.0.",
+        "cover": "http://192.168.1.99:9000/media/covers/django_for_beginners.jpg"
+    },
+    {
+        "id": "22000e28-6e53-4209-b5ee-0ebce53f0195",
+        "title": "Django the Easy Way",
+        "author": "Samuli Natri",
+        "price": "19.00",
+        "description": "Learn how to build and deploy web applications with Python and Django.",
+        "cover": "http://192.168.1.99:9000/media/covers/django_the_easy_way_Natri.jpg"
+    }
+]
