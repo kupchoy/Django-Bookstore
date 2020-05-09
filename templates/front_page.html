@@ -45,7 +45,7 @@
         <div class="row">
             {% for book in three_latest %}
                 <div class="media">
-                    <img class="mr-3 mt-3" src="{{ book.cover.url }}" alt="{{ book.title }}"
+                    <img class="mr-3 mt-3" src="/code/staticfiles{{ book.cover.url }}" alt="{{ book.title }}"
                          width="auto" height="100">
                     <div class="media-body">
                         <h5><a href="{{ book.get_absolute_url }}">{{ book.title }}</a></h5>
@@ -54,9 +54,7 @@
                 </div>
             {% endfor %}
         </div>
-        <div class="row">
-            <img class="mr-3 mt-3" src="{% static 'media/covers/djangoforprofessionals.jpg' %}" alt="Did not work">
-        </div>
+
 
     </div>
 
