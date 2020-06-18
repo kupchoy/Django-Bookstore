@@ -5,13 +5,13 @@ with Django.  Allows customers to register with the site, add items to their sho
 and checkout with Stripe.
 
 ### Home page
-![](static/images/DJ_home_page.PNG "home page")
+![](https://github.com/kupchoy/Django-Bookstore/blob/master/static/images/DJ_home_page.PNG "home page")
 
 ### List of Books
-![](static/images/DJ_book_list.PNG "book list")
+![](https://github.com/kupchoy/Django-Bookstore/blob/master/static/images/DJ_book_list.PNG "book list")
 
 ### Shopping Cart
-![](static/images/DJ_shopping_cart.PNG "shopping cart")
+![](https://github.com/kupchoy/Django-Bookstore/blob/master/static/images/DJ_shopping_cart.PNG "shopping cart")
 
 There is also an API that is accessed by its own Flutter App
-![](static/images/flutter_bookstore.jpg "flutter app")
+![](https://github.com/kupchoy/Django-Bookstore/blob/master/static/images/flutter_bookstore.jpg "flutter app")
